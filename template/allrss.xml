@@ -1,0 +1,24 @@
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss">
+	<channel>
+		<title>All Txt This Page Messages</title>
+		<link>http://www.txtthispage.com/All.rss</link>
+		<description>A List of all the text messages sent to txtthispage.com</description>
+		<language>en-gb</language>
+		<lastBuildDate>{{latest.added_on|date:"D, d M Y H:i:s"}}</lastBuildDate>
+		<copyright>Txtthispage.com 2008</copyright>
+		<ttl>15</ttl>
+		<image>
+			<title>Txt This Page</title>
+			<url>http://www.txtthispage.com/txtthispage.gif</url>
+			<link>http://www.txtthispage.com</link>
+		</image>
+		{% for msg in messages %}
+		<item>
+				<title>{{ msg.text }}</title>
+				<description>{{ msg.text }}</description>
+				<guid isPermaLink="true">http://www.txtthispage.com/msg/{{msg.id}}</guid>
+				<pubDate>{{msg.added_on|date:"D, d M Y H:i:s"}}</pubDate>
+		</item>
+		{% endfor %}
+	</channel>
+</rss>

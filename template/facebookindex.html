@@ -1,0 +1,64 @@
+<html>
+	<head>
+		<title>Text This Page!</title>
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+		<link href="/rss/all.rss" rel="alternate" type="application/rss+xml" title="All Text Messages RSS Feed" />
+	    <link rel="stylesheet" type="text/css" href="/css/reset.css">
+	    <link rel="stylesheet" type="text/css" href="/css/960.css">
+	    <link rel="stylesheet" type="text/css" href="/css/text.css">
+	    <link rel="stylesheet" type="text/css" href="/css/style.css">
+	</head>
+<body>
+	<div class="container_12" style="text-align: left; width: 715px;">
+		<div class="grid_12 header" style="text-align: left; width: 715px;">
+			<h1>Txt This Page!</h1>
+		</div>
+		<div class="grid_12 latest" style="text-align: left; width: 715px;">
+			<h1>Latest Message</h1>
+			<div class="message">{{ latest.text }}  - <span class="messagetime">({{latest.added_on|date:"F j, Y H:i:s"}})</span> <a href="/msg/{{ latest.id }}">#</a> {% ifnotequal latest.user_id None %}u: <a href="/u/{{ latest.user_id|default_if_none:"1" }}">@{{ latest.user_id|default_if_none:"1" }}</a>{% endifnotequal %}</div>
+		</div>
+		<div class="grid_6 send" style="text-align: left; width: 330px;">
+			<h1>Send a Message</h1>
+			(Standard Mobile Text Rates Apply)
+			<ul>
+				<li><img src="/images/us.gif" />US (en) - Send <strong>TXTPAGE <em>Your Message</em> to 91010 $0.25</strong></li>
+				<li><img src="/images/gb.gif" />UK (en) - Send <strong>TXTPAGE <em>Your Message</em> to 89892 &pound;0.25</strong></li>
+				<li><img src="/images/be.gif" />Belgium (fr)- Send <strong>TXTPAGE <em>Your Message</em> to 3236 EUR 0.50</strong></li>				
+				<li><img src="/images/ie.gif" />Ireland (en)- Send <strong>TXTPAGE <em>Your Message</em> to 57802 EUR 0.50</strong></li>				
+				<li><img src="/images/de.gif" />Germany (de)- Send <strong>TXTPAGE <em>Your Message</em> to 50200 EUR 0.49</strong></li>				
+				<li><img src="/images/nl.gif" />Netherlands (nl)- Send <strong>TXTPAGE <em>Your Message</em> to 3555 EUR 0.55</strong></li>				
+				<li><img src="/images/no.gif" />Norway (no)- Send <strong>TXTPAGE <em>Your Message</em> to 2098 NOK 5.00</strong></li>				
+				<li><img src="/images/es.gif" />Spain (es)- Send <strong>TXTPAGE <em>Your Message</em> to 5332 EUR 1.392</strong></li>
+			</ul>
+			<h2>Example</h2>
+			<img src="/images/iphone.jpg">
+			<h2>Terms</h2>
+			<ul>
+				<li>We will not sell your number or details.</li>
+				<li>You can send messages without an account.</li>				
+				<li>We will not tollerate abuse, hate, violence, bullying or racism.</li>
+			</ul>			
+		</div>		
+		<div class="grid_6 history" style="text-align: left; width: 330px;">
+			<h1>Recent Messages [<a href="/rss/all.rss">RSS</a>]</h1>			 
+			<ul  class="message">
+			{% for msg in therest %}
+				<li><a href="/msg/{{msg.id}}">{{ msg.text }}</a> - <span class="messagetime">({{msg.added_on|date:"F j, Y H:i:s"}})</span> <a href="/msg/{{ msg.id }}">#</a> {% ifnotequal msg.user_id None %}u: <a href="/u/{{ msg.user_id|default_if_none:"1" }}">@{{ msg.user_id|default_if_none:"1" }}</a>{% endifnotequal %}</li>
+			{% endfor %}
+			</ul>
+		</div>		
+		<div class="grid_12 footer" style="text-align: left; width: 715px;">
+			<p><a href="/">Txt This Page</a> is part of <a href="http://www.brandmovements.co.uk/">Brand Movements</a>. Copyright 2008.</p>
+		</div>	
+	</div>
+	<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+	try {
+	var pageTracker = _gat._getTracker("UA-114468-8");
+	pageTracker._trackPageview();
+	} catch(err) {}</script>      
+</body>
+</html>

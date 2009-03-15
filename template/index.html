@@ -1,0 +1,183 @@
+<html>
+	<head>
+		<title>TextThisPage - The Worlds only true SMS mobile micro blogging platform.</title>
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+		<link href="/rss/all.rss" rel="alternate" type="application/rss+xml" title="All Text Messages RSS Feed" />
+	    <link rel="stylesheet" type="text/css" href="/css/reset.css">
+	    <link rel="stylesheet" type="text/css" href="/css/960.css">
+	    <link rel="stylesheet" type="text/css" href="/css/text.css">
+	    <link rel="stylesheet" type="text/css" href="/css/style.css">
+		<link rel="stylesheet" type="text/css" href="/css/search.css">
+	</head>	
+	<body id="home">
+	    <div id="home-header">
+			<div class="container_12" >
+				<a href="/">
+				<div class="grid_8 header">
+					<h1>Text This Page</h1>
+				</div>
+				</a>
+				<div class="grid_4">
+					<p>We enable you to blog and communicate on the Internet via SMS on your mobile phone. Your account is created when you send your first SMS.</p>
+				</div>
+			</div>
+		</div>
+		<div class="container_12" style="text-align: left; margin-top:0;  background-color: #fff;" >
+			<div class="grid_12" style="background-color: #fff; padding-top: 10px; padding-bottom: 10px;">
+				<div class="grid_8 content alpha" style="margin-top: 0;">
+					<div id="results" style="margin-left: 10px;">
+						<h2>
+							<div id="timer"><b>Just Happened</b></div>
+							Last Message Posted
+						</h2>	
+						<ul>
+							<li class="result">
+							<div class="avatar">			
+								<a href="/u/{{latest.user_id}}"><img src="/images/anonymous.png" style="border:1px;"></a>
+							</div>
+							<div class="msg">
+						        <a href="/u/{{latest.user_id}}">@{{latest.user_id}}</a>: 
+								<span class="msgtxt en">{{latest.text|urlize}}</span>
+							</div>
+						    <div class="info">{{latest.added_on|date:"F j, Y H:i:s"}}
+						        <a href="/msg/{{latest.key.id}}#comment">Comment On</a>
+								&nbsp;|&nbsp;<a href="/msg/{{latest.key.id}}" class="lit">View Post</a> ({{ latest.reply_count }})
+						    </div>
+						  </li>
+						</ul>
+					</div>
+					<p class="clearer"></p>
+					<div id="results" style="margin-left: 10px;">
+						<h2>
+							<div id="timer"><b>Last Few</b> Posts</div>
+							Real-time results
+						</h2>
+						{% for msg in therest %}		
+						<ul>		
+							<li class="result">
+								<div class="avatar">
+									<a href="/u/{{ msg.user_id }}"><img alt="Me_normal" src="/images/anonymous.png" style="border:1px;"></a>
+								</div>
+								<div class="msg">
+							        <a href="/u/{{ msg.user_id }}">@{{ msg.user_id}}</a>: 
+									<span class="msgtxt en">{{msg.text|urlize}}</span>
+								</div>
+							    <div class="info">{{msg.added_on|date:"F j, Y H:i:s"}}
+							        <a href="/msg/{{msg.key.id}}#comment">Comment On</a>
+									&nbsp;|&nbsp;<a href="/msg/{{ msg.key.id }}" class="lit">View Post</a> ({{ msg.reply_count }})
+							    </div>
+							  </li>
+						</ul>
+						{% endfor %}
+						<div id="pager-bottom" class="paginator">[<a href="/rss/all.rss">RSS Feed of All Messages</a>]</div>	  
+					</div>
+				</div>
+				<div  class="grid_4 omega">
+					<div id="sideresults">
+					<h2>No Sign-up Required!</h2>
+					<strong>Your account is created when you send your first SMS. So GET Blogging and communicating now!</strong>
+					<p class="clearer"></p>			
+					<h2>To Send a Message</h2>
+					<ul>
+						<li class="result">
+						  <div class="avatar">
+								<a href=""><img src="/images/flag_great_britain.png" style="border:1px;"></a>
+							</div>
+						  <div class="msg">
+						        UK - Send <strong>TXTPAGE</strong> <i>Your Message</i> to 89892 &pound;0.25
+						  </div>
+						  </li>
+						  <li class="result">
+						  <div class="avatar">
+								<a href=""><img src="/images/flag_usa.png" style="border:1px;"></a>
+							</div>
+						  <div class="msg">
+						        US - Send <strong>TXTPAGE</strong> <i>Your Message</i> to 91010 $0.25
+						  </div>
+						  </li>
+						  <li class="result">
+						  <div class="avatar">
+								<a href=""><img src="/images/flag_france.png" style="border:1px;"></a>
+							</div>
+						  <div class="msg">
+						        France - Send <strong>TXTPAGE</strong> <i>Your Message</i> to 73700 EUR 0.50
+						  </div>
+						  </li>
+						  <li class="result">
+						  <div class="avatar">
+								<a href=""><img src="/images/flag_belgium.png" style="border:1px;"></a>
+							</div>
+						  <div class="msg">
+						        Belgium - Send <strong>TXTPAGE</strong> <i>Your Message</i> to 3236 EUR 0.50
+						  </div>
+						  </li>
+						  <li class="result">
+						  <div class="avatar">
+								<a href=""><img src="/images/flag_ireland.png" style="border:1px;"></a>
+							</div>
+						  <div class="msg">
+						        Ireland - Send <strong>TXTPAGE</strong> <i>Your Message</i> to 57802 EUR 0.50
+						  </div>
+						  </li>
+						  <li class="result">
+						  <div class="avatar">
+								<a href=""><img src="/images/flag_germany.png" style="border:1px;"></a>
+							</div>
+						  <div class="msg">
+						        Germany - Send <strong>TXTPAGE</strong> <i>Your Message</i> to 50200 EUR 0.49
+						  </div>
+						  </li>
+						  <li class="result">
+						  <div class="avatar">
+								<a href=""><img src="/images/flag_netherlands.png" style="border:1px;"></a>
+							</div>
+						  <div class="msg">
+						        Netherlands - Send <strong>TXTPAGE</strong> <i>Your Message</i> to 3555 EUR 0.55
+						  </div>
+						  </li>
+						  <li class="result">
+						  <div class="avatar">
+								<a href=""><img src="/images/flag_norway.png" style="border:1px;"></a>
+							</div>
+						  <div class="msg">
+						        Norway - Send <strong>TXTPAGE</strong> <i>Your Message</i> to 2098 NOK 5.00
+						  </div>
+						  </li>
+						  <li class="result">
+						  <div class="avatar">
+								<a href=""><img src="/images/flag_spain.png" style="border:1px;"></a>
+							</div>
+						  <div class="msg">
+						        Spain - Send <strong>TXTPAGE</strong> <i>Your Message</i> to EUR 1.392
+						  </div>
+						  </li>
+					</ul>
+					<div id="pager-bottom" class="paginator" style="padding-top:10px;">Standard Mobile Text Rates Apply. This service is not a subscription.</div>
+						<p class="clearer"></p>
+								<h2>Terms</h2>
+								<ul>
+									<li>We will not sell your number or details.</li>
+									<li>Whilst your number is private, your message are public.</li>
+									<li>You can send messages without setting up an account.</li>				
+									<li>We will not tolerate abuse, hate, violence, bullying or racism.</li>
+								</ul>
+						<p class="clearer"></p>
+					</div>
+				</div>					
+			</div>
+		</div>
+		<div id="LastFooter"> 
+		    <div id="footerMessage"> 
+		      <h3>TxtThisPage - The most powerful communication system on the planet.</h3>
+		      <p>Your account is created when you send your first SMS. So GET Blogging and communicating now...</p>
+		    </div>
+		    <ul id="footerLinks" class="clearit">
+		      <li class="first"> 
+		        <dl>
+		          <dt><span><a href="#">TxtThisPage</a> is part of <a href="http://www.brandmovements.co.uk/">Brand Movements</a>. Copyright 2008.</span></dt>
+		        </dl>
+		      </li>
+		    </ul>
+		</div>
+   </body>
+</html>

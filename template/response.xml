@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oneoff_response xmlns="https://api.zong.com/zapi/v1" reverse_charged="true" fragmentable="false" user_reference="{{ msg.user_reference }}" stop_session="false">
+	<text_content>Awesome! Your msg is live on txtthispage.com, your page is www.txtthispage.com/u/{{msg.user_id}} your pin is {{ msg.user.password }}</text_content>
+</oneoff_response>

@@ -1,0 +1,247 @@
+#results {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	padding: 10px;
+	margin-right: 0px;
+	width: 593px;
+	-webkit-border-bottom-left-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-bottom-left-radius: 5px;
+	-moz-border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	_width: 573px;
+}
+
+#sideresults {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	padding: 10px;
+	margin-right: 0px;
+	width: 270px;
+	-webkit-border-bottom-left-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-bottom-left-radius: 5px;
+	-moz-border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	_width: 100%;
+}
+
+#results h2 {
+	font-size: 20px;
+	line-height: 23px;
+	margin-bottom: 10px;
+	font-weight: normal;
+}
+
+#results h2.nores {
+	margin-bottom: 0;
+}
+
+#results h2 #timer {
+	float: right;
+	margin-left: 15px;
+	font-size: 13px;
+	line-height: 23px;
+	color: #777;
+}
+
+#results ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	border-top: 1px dashed #ccc;
+}
+
+#results ul div.thread {
+  margin-top: 10px;
+  background-color: #eee;
+  margin-left: 58px;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* IE hack for setting layout */
+#results ul div.thread { display: inline-block; }
+#results ul div.thread { display: block; }
+
+#results ul div.thread ul {
+	border-width: 0;
+}
+
+#results li {
+	margin: 0;
+	border-bottom: 1px dashed #ccc;
+	padding: 15px 5px;
+}
+
+#results li div.avatar {
+	float: left;
+	width: 48px;
+	height: 48px;
+	overflow: hidden;
+}
+
+#results li div.flag {
+	float: left;
+	width: 24px;
+	height: 24px;
+	overflow: hidden;
+}
+
+
+#results li div.avatar a {
+	text-decoration: none;
+}
+
+#results li div.avatar img {
+	width: 48px;
+	height: 48px;
+}
+
+#results li div.avatar a.from_av {
+	display: block;
+	width: 36px;
+	height: 36px;
+}
+
+#results li div.avatar a.to_av {
+	display: block;
+	width: 26px;
+	height: 26px;
+	margin-left: 22px;
+	margin-top: -14px;
+}
+
+#results li div.avatar a.from_av img {
+	width: 36px;
+	height: 36px;
+}
+
+#results li div.avatar a.to_av img {
+	width: 24px;
+	height: 24px;
+	border: 1px solid #ccc;
+}
+
+#results li.nested div.avatar {
+	float: left;
+	width: 36px;
+	height: 36px;
+	overflow: hidden;
+}
+
+#results li.nested div.avatar img {
+	width: 36px;
+	height: 36px;	
+}
+
+#results  li .msg {
+	margin-left: 58px;
+	font-size: 14px;
+	line-height: 17px;
+	margin-bottom: 5px;
+}
+
+#results li.nested .msg {
+	margin-left: 45px;
+	font-size: 13px;
+	line-height: 15px;
+	margin-bottom: 3px;
+}
+
+#results li .msgtxt.translated {
+	background-color: #ffffcc;
+}
+
+#results li .info, #results li .debug {
+	margin-left: 58px;
+	color: #777;
+	font-size: 13px;
+}
+
+#results li .location {
+	margin: 5px 0 5px 58px;
+	font-size: 13px;
+	color: #3d9438;
+}
+
+#results li .debug {
+  padding-top: 5px;
+  padding-left: 10px;
+}
+
+#results li.nested .info {
+	margin-left: 45px;
+	color: #777;
+	font-size: 11px;
+}
+
+#results li.inthread {
+	border: 0;
+	padding-bottom: 0;
+}
+
+#results li.nested {
+	padding-left: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-top: 1px dashed #ccc;
+}
+
+#results li .one_sided_expl {
+	margin-top: 5px;
+}
+
+#results li img.thread {
+	margin-bottom: -5px;
+}
+
+#results div.thread li.first {
+  border-top: 0px;
+}
+
+#results li.featured {
+	background-color: #ffffcc;
+}
+
+#results .paginator {
+	margin: 10px 0;
+	text-align: center;
+}
+
+#results #pager-bottom.paginator {
+	margin-bottom: 0;
+}
+
+
+#sideresults ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#sideresults li {
+	margin: 0;
+	border-bottom: 1px dashed #ccc;
+	padding: 5px 5px;
+}
+
+#sideresults li div.avatar {
+	float: left;
+	width: 33px;
+	height: 33x;
+	overflow: hidden;
+}
+
+#sideresults li div.avatar a {
+	text-decoration: none;
+}
+
+#sideresults li div.avatar img {
+	width: 24px;
+	height: 24px;
+}

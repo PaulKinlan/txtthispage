@@ -1,0 +1,6 @@
+[ 
+	{% for item in messages %} 
+		{ "message": "{{item.text|escape}}", "added_on": "{{item.added_on|escape}}" } 
+		{% if not forloop.last %}, {% endif %} 
+	{% endfor %} 
+]

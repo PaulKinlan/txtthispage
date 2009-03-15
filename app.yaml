@@ -1,0 +1,21 @@
+application: txtthispage
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /css
+  static_dir: css
+- url: /favicon.ico
+  static_files: favicon.ico
+  upload: favicon.ico
+- url: /robots.txt
+  static_files: robots.txt
+  upload: robots.txt
+- url: /txtthispage.gif
+  static_files: txtthispage.gif
+  upload: txtthispage.gif  
+- url: /images
+  static_dir: images
+- url: .*
+  script: txtthispage.py

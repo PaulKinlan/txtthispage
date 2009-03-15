@@ -1,0 +1,427 @@
+body
+{
+	background: #fff;
+	color: #000;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	font-family: "Trebuchet MS",Tahoma,Verdana;
+}
+
+.clear {
+    clear: both;
+    height: 1em;
+}
+
+.right {
+	float: right;
+	margin: 10px 20px 10px 5px;
+}
+
+.left {
+	float: left;
+	margin: 0 15px 0 -55px;
+} /*ie6*/
+
+.spacer {
+	height: 6px;
+	overflow: hidden;
+}
+
+a
+{
+	color: #0D85CC;
+	text-decoration: dashed;
+}
+
+a:hover
+{
+	text-decoration: underline;
+}
+
+body#home {
+	background: #e5f1f4;
+	color: #3f4648;
+	padding: 0;
+	margin: 0;
+}
+
+#home-header {
+	background: #433c2a;
+	color: #a59e8f;
+	min-height: 170px;
+	text-align: center;
+	
+}
+
+body#home a {
+	color: #2e8696;
+}
+
+body#home #home-header p a {
+	color: #9fe0f5;
+}
+
+body#home a:hover {
+	text-decoration: underline;
+}
+
+#home h3 {
+	color: #ccee46;
+	font-family: inherit;
+	font-size: 100%;
+}
+
+#home-header p {
+	font-size: 118%;
+	letter-spacing: 0.05em;
+	line-height: 1.5em;
+	margin: 10px;
+	margin-top: 40px;
+	text-align: justify;
+}
+
+.home-container {
+	width: 750px;
+	margin: 0 auto;
+	text-align: left;
+	padding: 40px 0 0 0;
+}
+
+input#id_username, input#id_password {
+	width: 80px;
+	border: none;
+	padding: 4px !important;
+	margin-right: 4px;
+}
+
+.login-go div {
+    float: left;
+}
+
+.login-go p {
+    clear: left;
+}
+
+.login-go label {
+    font-weight: bold;
+	text-transform: uppercase;
+	color: #90b500;
+}
+
+#login-form {
+	padding-bottom: 10px;
+}
+
+#login-form input.button {
+	color: #8b9f00;
+	background: #fff;
+	border-width: 0 1px 1px 0;
+	border-color: #999;
+	padding: 4px 7px;
+}
+
+#home-header a.button {
+	width: 246px;
+	text-align: center;
+	padding: 6px 0;
+	text-decoration: underline;
+	color: #90b500 !important;
+	font-size: 115%;
+	font-weight: bold;
+	display: block;
+	border: 1px solid #fff;
+	border-color: #ddd #000 #000 #ddd;
+}
+
+#home-header .home-container {
+	padding: 15px 0 35px 0;
+}
+
+#home-contents .home-container {
+	background: url(home-back.gif) 50px 0 no-repeat;
+}
+
+#home-contents input {
+	border: 1px solid #ccc;
+	border-width: 1px 0 0 1px;
+	background: #fff;
+	padding: 5px;
+}
+
+#home-contents .button {
+	padding: 3px 6px;
+    font-size: 85%;
+    vertical-align: middle;
+    border: 1px solid #90b500;
+    background: #90b500;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+.login-other {
+	display: none;
+}
+
+body#home #home-header h1 {
+	color: #fff;
+	font-size: 300%;
+	margin-top: 50px;
+	margin-bottom: 0;
+} /*ie6 ie7*/
+
+body#home #home-header h3 {
+	font-family: Georgia, serif;
+	font-size: 135%;
+}
+
+body#home h2 {
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #90b500;
+}
+
+#home-header p {
+	font-size: 118%;
+	letter-spacing: 0.05em;
+	line-height: 1.5em;
+	margin-top: 40px;
+}
+
+div#LastFooter {
+	clear: both;
+	font-size: 11px;
+	color: #FFF;
+	background-image: url('/images/gradient_footer.gif');
+	background-position: left top;
+	background-repeat: repeat-x;
+	text-align: left;
+	position: relative;
+	padding: 20px 15px;
+	line-height: 1.2;
+	overflow: hidden;
+	background-color: #828282;
+}
+
+div#LastFooter a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+div#LastFooter a:hover {
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+div#LastFooter div#footerMessage {
+  font-size: 13px;
+  padding: 0 0 15px 0;
+  border-bottom: solid 1px #BBB;
+  margin: 0 0 20px 0;
+}
+
+div#LastFooter div#footerMessage h3 {
+  margin: 0 0 0.6em 0;
+  font-size: 13px;
+  color: #FFF;
+}
+
+div#LastFooter div#footerMessage p {
+  margin: 0;
+  line-height: 1.4em;
+}
+
+div#LastFooter div#footerMessage p a {
+  text-decoration: underline;
+}
+
+div#LastFooter ul#footerLinks {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+div#LastFooter ul#footerLinks * {
+  margin: 0;
+  padding: 0;
+}
+
+div#LastFooter ul#footerLinks li {
+  float: left;
+  display: inline;
+  margin-left: 35px;
+  padding-left: 1px;
+}
+
+div#LastFooter ul#footerLinks li.first {
+  margin-left: 0;
+}
+
+div#LastFooter ul#footerLinks dt {
+  font-weight: bold;
+  margin-bottom: 0.6em;
+}
+
+div#LastFooter ul#footerLinks dd {
+  margin-bottom: 0.4em;
+  color: white;
+}
+
+div#LastFooter div#footerLogos {
+  color: #DFDFDF;
+  padding-left: 15px;
+  margin-left: -15px;
+  padding-bottom: 15px;
+  margin-top: 60px;
+}
+
+div#LastFooter div#footerLogos a {
+  color: #DFDFDF;
+}
+
+div#LastFooter div#footerLogos p#slogan {
+  font-family: Georgia, serif;
+  font-style: italic;
+  margin-left: 1.4em;
+  position: relative;
+  top: -2px;
+  display: inline;
+}
+
+div#LastWebsite div#LastFooter div.withExcite p#slogan {
+  display: block;
+  position: static;
+  margin: 1em 0;
+}
+
+div#LastFooter div#footerLogos a#excitelinkelement {
+  position: relative;
+  top: 6px;
+}
+
+div#LastFooter div#footerLogos p {
+  margin: 0.4em 0 0 0;
+}
+
+div#LastFooter div#footerLogos span {
+  padding-left: 0.4em;
+  border-left: solid 1px #A0A0A0;
+}
+
+.recent
+{
+	margin: 10px;
+	background-color:#EFF2F4;
+	border:1px solid #E5E9EC;
+	color:#000000;
+	font-size:12px;
+	padding: 10px;
+}
+
+.content
+{
+	background: #fff;
+}
+
+.latest
+{
+	margin: 10px;
+	background-color:#FFD699;
+	border:1px solid #FF9900;
+	color:#000000;
+	font-size:12px;
+	padding: 10px;
+}
+
+.latest h1
+{
+	font-family: "Trebuchet MS",Tahoma,Verdana;
+    /*font-size: 3.0em;*/
+}
+
+.messagecontainer
+{
+	border: solid #E5E9EC 1px;
+	border-bottom: 0px;
+	background: #fff;
+}
+
+.message 
+{
+	border: 0;
+	border-bottom: solid #ddd 1px;
+	background: #ffffff;
+	padding: 10px;
+}
+
+.message p
+{
+	padding: 0 5px 0 5px;
+	margin: 0;
+}
+
+.message h4
+{
+	margin: 0 0 0 0;
+	padding: 0 5px 0 5px;
+	padding-bottom: 0;
+}
+
+.send
+{
+	margin: 10px 10px 0 0 ;
+	padding: 0 5px 0 5px;
+	border: solid 1px #B0D78F;
+	background-color: #E8FBD8;
+}
+
+.send h1
+{
+	font-family: "Trebuchet MS",Tahoma,Verdana;
+    font-size: 2.0em;
+	margin-bottom: 0;
+}
+
+.send img
+{
+	margin-right: 5px;
+}
+
+.send p
+{
+	padding: 0 5px 0 5px;
+	margin: 0;
+	margin-bottom: 5px;
+}
+
+.history
+{
+	margin-top: 50px;
+}
+
+.history h1
+{
+	font-family: "Trebuchet MS",Tahoma,Verdana;
+    font-size: 2.0em;
+}
+
+.history .message
+{
+	font-size: 1.0em;
+	font-style: italic;
+}
+
+.footer
+{
+	border-top: solid 3px black
+}
+
+.header h1
+{
+	background-image: url(/images/logo.jpg);
+	background-repeat: no-repeat;
+	text-indent: -10000px;
+	min-height: 70px;
+	cursor:hand;
+}
